@@ -19,3 +19,4 @@ for ii=1:7
     your_cards1(hand1(ii,1),hand1(ii,2))=1; % create a new 4X13 matrix of zeros except the locations of hand cards are identified with ones
 end
 end
+% test
