@@ -1,0 +1,80 @@
+% Task 1 - Problem 1 - by Tarek
+a = 1:8;
+for ii = 2:8
+a(ii , :) = a(ii-1 , :) + 8;
+end
+M1=a'
+M2=a
+% -----
+b=M1;
+for ii = 1:4
+for iii = 1:4
+b(ii , iii) = 1;
+end
+end
+M3=b
+% -----
+c=M1;
+for ii = 4:5
+for iii = 4:5
+c(ii , iii) = 0;
+end
+end
+M4=c
+% -----
+d=M1;
+for ii = 1:2
+for iii = 1:2
+for iiii = 1:3
+d(ii , iii) = 1;
+d(ii+2*iiii , iii+2*iiii) = 1;
+end
+end
+end
+M5=d
+% -----
+% [q,w]=size(M1);
+e=M1;
+for ii = 1:2
+for iii = 1:2
+for iiii = 1:3
+e(9-ii , iii) = 1;
+e(9-ii-2*iiii , iii+2*iiii) = 1;
+end
+end
+end
+M6=e
+% -----
+f=M1;
+for ii = 1:2
+for iii = 1:2
+for iiii = 1:3
+f(ii , iii) = 0;
+1
+f(ii+2*iiii , iii+2*iiii) = 0;
+end
+end
+end
+M7=f
+% -----
+g=100*ones(8,8);
+for ii = 1:2
+for iii = 1:2
+for iiii = 1:3
+g(ii , iii) = M1(ii , iii);
+g(ii+2*iiii , iii+2*iiii) = M1(ii+2*iiii , iii+2*iiii);
+end
+end
+end
+M8=g
+% -----
+%h=0;
+for ii = 1:2
+for iii = 1:2
+for iiii = 1:3
+h(ii , iii) = M1(ii , iii);
+h(ii+2*iiii , iii+2*iiii) = M1(ii+2*iiii , iii+2*iiii);
+end
+end
+end
+M9=h
