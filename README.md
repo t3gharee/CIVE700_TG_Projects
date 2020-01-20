@@ -3,7 +3,7 @@
 Code block
 
 
-here you'll find CIVE700 Projects prepared by me
+1. here you'll find CIVE700 Projects prepared by me
 function your_cards1 = your_cards()
 % This function create matrix 4X13 of all cards, simulate hand of randomly selected seven cards and identify the locations of those seven cards on the matrix of all cards.
 all_cards=zeros(4,13);
